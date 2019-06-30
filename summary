@@ -1,0 +1,46 @@
+缘由：为控制机器人成本，后期在室内作业的机器人将采用性价比更高的激光。
+
+方法：通读cartographer代码的逻辑框架，通过优化cartorgrapher的建图方法和调节建图时lds_indoor.lua中的参数，提高cartographer在室内建图的精度。
+
+计划和时间节点：
+
+12.25 从GlobalTrajectoryBuilder.cc文件开始入手学习cartographer。
+
+GlobalTrajectoryBuilder类：主要是传感器数据的获取和插入。包括AddImuData，AddOdometerPose，AddLaserFan3D这三个函数。这里面有local_trajectory_builder来进行submap的构建，以及sparse_pose_graph来进行闭环检测和全局优化。
+GlobalTrajectoryBuilder::AddHorizontalLaserFan调用local_trajectory_builder的相应函数来进行激光帧的插入。插入成功之后会调用sparse_pose_graph的AddScan()来进行回环检测和后端优化
+
+
+12.26 -- 12.28 前端匹配LocalTrajectoryBuilder::ScanMatch
+
+LocalTrajectoryBuilder::ScanMatch包括RealTimeCorrelativeScanMatcher::Match和CeresScanMatcher::Match。
+
+LocalTrajectoryBuilder::ScanMatch这个函数里面通过pose_prediction作为初始位姿给real_time_csm进行计算，用real_time_csm得到的姿态作为 ceres_scan_match的初始位姿，然后通过ceres-scan_matching来进行scan-to-map的结算来得到最终的位姿（地图为三次样条差值）。然后用这个最终的位姿来更新滤波器。
+
+
+RealTimeCorrelativeScanMatcher::Match：RealTimeCorrelativeScanMatcherOptions：设置搜索的窗口的大小和权重参数。
+
+RealTimeCorrelativeScanMatcher：遍历线性搜索空间和角度搜索空，得到整个搜索空间里面的所有的候选解。
+ScoreCandidates：计算空间中所有的候选解的得分。每个候选解得分的计算方式为候选解中所有击中的栅格的占用概率的平均值。并且如果对应的候选解离初始位置比较远，则会施加惩罚。（这种情况应该是对于环境比较相似的环境中会有比较好的效果，例如长走廊，后期需要重点调试这两个权重参数）。找到得分最大的候选解candidate，候选解的位姿即为优化过后的位姿。优化过后的位姿作为CeresScanMatcher的初始值继续优化。
+
+
+
+
+CeresScanMatcher::Match：
+这个函数通过构造栅格残差，平移残差和旋转残差构造出目标函数，然后利用ceres::Solve求解器求出最优的位姿。
+
+
+
+
+
+12.29 在ceres官网学习如何通过构造栅格残差，平移残差和旋转残差构造出目误差函数，并求出最优解。
+
+
+
+1.2 -- 1.4  重点学习闭环检测部分
+SparsePoseGraph
+闭环检测。
+
+
+
+
+从1月7号开始着手调节cartographer建图参数。

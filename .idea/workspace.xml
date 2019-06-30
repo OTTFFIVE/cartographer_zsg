@@ -11,24 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a6e8d73-85da-4a0c-9c76-b01e3887db6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/global_trajectory_builder.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/global_trajectory_builder.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/global_trajectory_builder.h" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/global_trajectory_builder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/local_trajectory_builder.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/local_trajectory_builder.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/local_trajectory_builder.h" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/local_trajectory_builder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/map_limits.h" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/map_limits.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/probability_grid.h" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/probability_grid.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/correlative_scan_matcher.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/correlative_scan_matcher.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/correlative_scan_matcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/correlative_scan_matcher.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/fast_correlative_scan_matcher.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/fast_correlative_scan_matcher.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/real_time_correlative_scan_matcher.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/real_time_correlative_scan_matcher.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/sparse_pose_graph.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/sparse_pose_graph.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/mapping_2d/sparse_pose_graph/constraint_builder.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/mapping_2d/sparse_pose_graph/constraint_builder.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartographer/sensor/point_cloud.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cartographer/sensor/point_cloud.cc" afterDir="false" />
-    </list>
+    <list default="true" id="7a6e8d73-85da-4a0c-9c76-b01e3887db6b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/real_time_correlative_scan_matcher.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="163" column="33" lean-forward="true" selection-start-line="163" selection-start-column="33" selection-end-line="163" selection-end-column="33" />
+            <state relative-caret-position="326">
+              <caret line="148" column="38" selection-start-line="148" selection-start-column="38" selection-end-line="148" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -70,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/cartographer/mapping_2d/probability_grid.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="314">
-              <caret line="215" column="6" lean-forward="true" selection-start-line="215" selection-start-column="6" selection-end-line="215" selection-end-column="6" />
+              <caret line="215" column="6" selection-start-line="215" selection-start-column="6" selection-end-line="215" selection-end-column="6" />
               <folding>
                 <element signature="e#715#735#0" expanded="true" />
               </folding>
@@ -112,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/cartographer/sensor/point_cloud.cc">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="401">
-              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
               <folding>
                 <element signature="e#819#868#0" expanded="true" />
               </folding>
@@ -148,11 +131,11 @@
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="94" />
-    <option name="y" value="148" />
-    <option name="width" value="1671" />
-    <option name="height" value="865" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="313" />
+    <option name="y" value="152" />
+    <option name="width" value="1669" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -295,11 +278,11 @@
     </configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="-11" width="1859" height="1092" extended-state="6" />
+    <frame x="313" y="152" width="1669" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15599343" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17388652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="LuaCheck" />
       <window_info anchor="bottom" id="Version Control" />
@@ -407,7 +390,7 @@
     <entry file="file://$PROJECT_DIR$/cartographer/sensor/point_cloud.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
-          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
             <element signature="e#819#868#0" expanded="true" />
           </folding>
@@ -424,7 +407,7 @@
     <entry file="file://$PROJECT_DIR$/cartographer/mapping_2d/probability_grid.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
-          <caret line="215" column="6" lean-forward="true" selection-start-line="215" selection-start-column="6" selection-end-line="215" selection-end-column="6" />
+          <caret line="215" column="6" selection-start-line="215" selection-start-column="6" selection-end-line="215" selection-end-column="6" />
           <folding>
             <element signature="e#715#735#0" expanded="true" />
           </folding>
@@ -440,8 +423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cartographer/mapping_2d/scan_matching/real_time_correlative_scan_matcher.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="163" column="33" lean-forward="true" selection-start-line="163" selection-start-column="33" selection-end-line="163" selection-end-column="33" />
+        <state relative-caret-position="326">
+          <caret line="148" column="38" selection-start-line="148" selection-start-column="38" selection-end-line="148" selection-end-column="38" />
         </state>
       </provider>
     </entry>
